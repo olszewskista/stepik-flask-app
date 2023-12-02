@@ -10,39 +10,36 @@ CREATE (e9:Employee {name: "William", surname: "Moore", position: "Developer"})
 CREATE (e10:Employee {name: "Emma", surname: "Johnson", position: "Designer"})
 CREATE (e11:Employee {name: "Daniel", surname: "White", position: "Manager"})
 CREATE (e12:Employee {name: "Ava", surname: "Taylor", position: "Analyst"})
-// CREATE (e13:Employee {name: "James", surname: "Anderson", position: "Developer"})
-// CREATE (e14:Employee {name: "Sophie", surname: "Clark", position: "Designer"})
-// CREATE (e15:Employee {name: "Matthew", surname: "Thomas", position: "Manager"})
-// CREATE (e16:Employee {name: "Grace", surname: "Walker", position: "Analyst"})
+
 
 CREATE (d1:Department {name: "IT"})
 CREATE (d2:Department {name: "Design"})
-// CREATE (d3:Department {name: "Management"})
 CREATE (d4:Department {name: "Analysis"})
+
 
 CREATE
     (e1)-[:WORKS_IN]->(d1),
     (e5)-[:WORKS_IN]->(d1),
     (e9)-[:WORKS_IN]->(d1)
-    // (e13)-[:WORKS_IN]->(d1)
+
 
 CREATE
     (e2)-[:WORKS_IN]->(d2),
     (e6)-[:WORKS_IN]->(d2),
     (e10)-[:WORKS_IN]->(d2)
-    // (e14)-[:WORKS_IN]->(d2)
+
 
 CREATE
     (e3)-[:WORKS_IN]->(d1),
     (e7)-[:WORKS_IN]->(d2),
     (e11)-[:WORKS_IN]->(d4)
-    // (e15)-[:WORKS_IN]->(d3)
+
 
 CREATE
     (e4)-[:WORKS_IN]->(d4),
     (e8)-[:WORKS_IN]->(d4),
     (e12)-[:WORKS_IN]->(d4)
-    // (e16)-[:WORKS_IN]->(d4)
+
 
 
 CREATE
@@ -62,9 +59,3 @@ CREATE
     (e11)-[:MANAGES]->(e10),
     (e11)-[:MANAGES]->(e12),
     (e11)-[:MANAGES]->(d4)
-
-
-// CREATE
-//     (e15)-[:MANAGES]->(e13),
-//     (e15)-[:MANAGES]->(e14),
-//     (e15)-[:MANAGES]->(e16)
