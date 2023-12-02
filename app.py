@@ -228,7 +228,3 @@ def get_departments_employees_route(name):
         result = session.execute_read(get_departments_employees, name)
     return jsonify({"employees": result})
         
-
-if __name__ == "__main__":
-
-    app.run()

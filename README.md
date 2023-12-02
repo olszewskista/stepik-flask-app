@@ -1,6 +1,6 @@
 # Employee Managemet Flask Api
 
-Live version: 
+Live version: https://stepik-flask-api.onrender.com
 
 ## Endpoins:
 #### 1. GET - "/employees"
@@ -13,7 +13,7 @@ Live version:
 - Add new employee
 - Example request body:
 ```json
- {
+{
 	"name": "Rat",
     "surname": "Dar",
     "position": "Developer",
